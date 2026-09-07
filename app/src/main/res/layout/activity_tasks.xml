@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#07111F"
+    android:padding="18dp">
+
+    <TextView
+        android:id="@+id/txtMissionHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MISSION CONTROL"
+        android:textColor="#F2F7FF"
+        android:textSize="27sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RX-0 / ACTIVE OPERATIONS"
+        android:textColor="#37B9FF"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="15dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTasks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnAddMission"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="NEW MISSION"
+        android:textColor="#07111F"
+        android:textStyle="bold"
+        android:backgroundTint="#37B9FF"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>

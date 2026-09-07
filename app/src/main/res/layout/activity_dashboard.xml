@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07111F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RX-0 COMMAND CENTER"
+            android:textColor="#F2F7FF"
+            android:textSize="27sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtPilot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PILOT: UNKNOWN"
+            android:textColor="#37B9FF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/imgUnicorn"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_unicorn"
+            android:contentDescription="RX-0 Unicorn"/>
+
+        <TextView
+            android:id="@+id/txtSystemState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="● NT-D SYSTEM: READY"
+            android:textColor="#37B9FF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SYSTEM READINESS"
+            android:textColor="#9FB1C5"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="22dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressSystem"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:max="100"
+            android:progress="78"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/txtProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SYSTEM READINESS: 0%"
+            android:textColor="#37B9FF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="8dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_marginTop="25dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ACTIVE"
+                    android:textColor="#9FB1C5"
+                    android:textSize="12sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="COMPLETED"
+                    android:textColor="#9FB1C5"
+                    android:textSize="12sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TOTAL"
+                    android:textColor="#9FB1C5"
+                    android:textSize="12sp"
+                    android:gravity="center"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/txtActive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#FF365C"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txtCompleted"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#37B9FF"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txtTotal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#F2F7FF"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnMissions"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="MISSION CONTROL"
+            android:textColor="#07111F"
+            android:textStyle="bold"
+            android:backgroundTint="#37B9FF"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:id="@+id/btnNewMission"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="NEW MISSION"
+            android:textColor="#07111F"
+            android:textStyle="bold"
+            android:backgroundTint="#37B9FF"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="SYSTEM SETTINGS"
+            android:textColor="#07111F"
+            android:textStyle="bold"
+            android:backgroundTint="#37B9FF"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="LOGOUT"
+            android:textColor="#F2F7FF"
+            android:textStyle="bold"
+            android:backgroundTint="#FF365C"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UNICORN TASK SYSTEM / NT-D CONTROL INTERFACE"
+            android:textColor="#526579"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

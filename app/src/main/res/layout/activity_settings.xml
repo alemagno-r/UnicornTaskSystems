@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07111F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SYSTEM SETTINGS"
+            android:textColor="#F2F7FF"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RX-0 / SYSTEM CONFIGURATION"
+            android:textColor="#37B9FF"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SYSTEM STATUS"
+            android:textColor="#37B9FF"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtSystemMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="● SYSTEM MODE: ACTIVE"
+            android:textColor="#37B9FF"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="APPLICATION INFORMATION"
+            android:textColor="#37B9FF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/txtVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UNICORN TASK SYSTEM&#10;VERSION 1.0"
+            android:textColor="#F2F7FF"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="BACK TO COMMAND CENTER"
+            android:textColor="#07111F"
+            android:textStyle="bold"
+            android:backgroundTint="#37B9FF"
+            android:layout_marginTop="35dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07111F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RX-0"
+            android:textColor="#F2F7FF"
+            android:textSize="44sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="45dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UNICORN"
+            android:textColor="#37B9FF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.15"
+            android:gravity="center"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SYSTEM LOGIN"
+            android:textColor="#9FB1C5"
+            android:textSize="14sp"
+            android:letterSpacing="0.10"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="45dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PILOT ID"
+            android:textColor="#37B9FF"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/editUser"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="ENTER PILOT ID"
+            android:inputType="text"
+            android:textColor="#F2F7FF"
+            android:textColorHint="#526579"
+            android:singleLine="true"
+            android:padding="15dp"
+            android:backgroundTint="#37B9FF"
+            android:layout_marginTop="7dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACCESS CODE"
+            android:textColor="#37B9FF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"/>
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="ENTER ACCESS CODE"
+            android:inputType="textPassword"
+            android:textColor="#F2F7FF"
+            android:textColorHint="#526579"
+            android:singleLine="true"
+            android:padding="15dp"
+            android:backgroundTint="#37B9FF"
+            android:layout_marginTop="7dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="AUTHENTICATE"
+            android:textColor="#07111F"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:backgroundTint="#37B9FF"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="● SYSTEM STATUS: STANDBY"
+            android:textColor="#FF365C"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RX-0 / NT-D SECURITY SYSTEM"
+            android:textColor="#526579"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

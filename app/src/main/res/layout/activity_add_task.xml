@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07111F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEW MISSION"
+            android:textColor="#F2F7FF"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RX-0 / MISSION REGISTRATION"
+            android:textColor="#37B9FF"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MISSION NAME"
+            android:textColor="#37B9FF"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/editMission"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="ENTER MISSION NAME"
+            android:textColor="#F2F7FF"
+            android:textColorHint="#526579"
+            android:singleLine="true"
+            android:padding="15dp"
+            android:backgroundTint="#37B9FF"
+            android:layout_marginTop="7dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CATEGORY"
+            android:textColor="#37B9FF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="7dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MISSION TYPE"
+            android:textColor="#37B9FF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMARY MISSION"
+                android:textColor="#F2F7FF"/>
+
+            <RadioButton
+                android:id="@+id/radioSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SECONDARY MISSION"
+                android:textColor="#F2F7FF"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SYSTEM PRIORITY"
+            android:textColor="#37B9FF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingMission"
+            style="?android:attr/ratingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:rating="3"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/btnSaveMission"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="REGISTER MISSION"
+            android:textColor="#07111F"
+            android:textStyle="bold"
+            android:backgroundTint="#37B9FF"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

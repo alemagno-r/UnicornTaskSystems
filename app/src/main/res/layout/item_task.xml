@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="#0D1D31"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:id="@+id/txtTaskTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MISSION 001"
+            android:textColor="#F2F7FF"
+            android:textSize="19sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtTaskCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CATEGORY: SYSTEM"
+            android:textColor="#37B9FF"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MISSION PRIORITY"
+            android:textColor="#9FB1C5"
+            android:textSize="11sp"
+            android:layout_marginTop="12dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingTask"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:rating="3"/>
+
+        <CheckBox
+            android:id="@+id/checkTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MISSION COMPLETED"
+            android:textColor="#F2F7FF"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/txtMissionState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="● STATUS: ACTIVE"
+            android:textColor="#FF365C"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#07111F">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UNICORN TASK SYSTEM"
+        android:textColor="#37B9FF"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SYSTEM ONLINE"
+        android:textColor="#F2F7FF"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:text="START SYSTEM"
+        android:textColor="#07111F"
+        android:backgroundTint="#37B9FF"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
